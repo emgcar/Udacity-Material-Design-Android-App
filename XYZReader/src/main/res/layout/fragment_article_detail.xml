@@ -94,17 +94,23 @@
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
         </FrameLayout>
     </com.example.xyzreader.ui.ObservableScrollView>
+    
+    <android.support.design.widget.FloatingActionButton
+        app:fabSize="normal"
+        app:elevation="@dimen/fab_elevation"
+        app:pressedTranslationZ="@dimen/fab_press_translation_z"
 
-    <ImageButton android:id="@+id/share_fab"
-        android:stateListAnimator="@animator/fab_state_list_anim"
+        android:id="@+id/share_fab"
+        android:src="@drawable/ic_share"
         android:background="@drawable/add_fab_background"
+        android:contentDescription="@string/action_share"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
         android:layout_gravity="bottom|end"
         android:layout_marginRight="@dimen/fab_margin"
-        android:layout_marginBottom="@dimen/fab_margin"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:src="@drawable/ic_share"
-        android:elevation="@dimen/fab_elevation"
-        android:contentDescription="@string/action_share" />
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"/>
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
